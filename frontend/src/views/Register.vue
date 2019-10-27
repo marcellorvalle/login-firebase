@@ -1,6 +1,6 @@
 <template>
-  <div class="create-user"> 
-      <h1>create-userComponent</h1>
+  <div class="register"> 
+      <h1>registerComponent</h1>
   </div>
 </template>
 <script lang="ts">
@@ -8,7 +8,7 @@
   import Component from 'vue-class-component';
 
   @Component({})
-  export default class CreateUserComponent extends Vue {
+  export default class RegisterComponent extends Vue {
 
     mounted (){
       console.log('hello from app');
@@ -19,7 +19,7 @@
 </script>
 
 <style scoped lang="scss">
-  .create-user {
+  .register {
 
   }
 </style>
