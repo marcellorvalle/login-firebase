@@ -1,0 +1,3 @@
+rootProject.name = 'login-firebase'
+include 'backend'
+include 'frontend'
