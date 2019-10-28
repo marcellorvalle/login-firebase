@@ -18,8 +18,3 @@
 
 </script>
 
-<style scoped lang="scss">
-  .register {
-
-  }
-</style>

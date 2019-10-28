@@ -14,7 +14,6 @@ public class WebConfiguration implements WebMvcConfigurer {
     @Value("${app.headers}")
     private String[] headers;
 
-
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
@@ -22,4 +21,5 @@ public class WebConfiguration implements WebMvcConfigurer {
                 .allowedHeaders(headers)
                 .allowedMethods(methods);
     }
+
 }

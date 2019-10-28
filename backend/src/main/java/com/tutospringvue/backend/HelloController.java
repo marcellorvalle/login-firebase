@@ -5,9 +5,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Date;
 
-@RestController
+//@RestController
 public class HelloController {
-    @GetMapping("/hello")
+//    @GetMapping("/hello")
     public String sayHello() {
         return "Olá! A data atual é: " + new Date().toString();
     }

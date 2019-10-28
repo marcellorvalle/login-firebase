@@ -17,9 +17,3 @@
   }
 
 </script>
-
-<style scoped lang="scss">
-  .login {
-
-  }
-</style>
