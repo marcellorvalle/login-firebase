@@ -10,9 +10,7 @@
   @Component({})
   export default class LoginComponent extends Vue {
 
-    mounted (){
-      console.log('hello from app');
-    }
+    mounted (){}
     
   }
 
