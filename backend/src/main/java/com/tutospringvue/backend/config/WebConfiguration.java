@@ -1,4 +1,4 @@
-package com.tutospringvue.backend;
+package com.tutospringvue.backend.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.web.server.ErrorPage;
