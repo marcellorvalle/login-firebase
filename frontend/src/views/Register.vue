@@ -36,7 +36,7 @@ export default class RegisterComponent extends Vue {
   }
 
   private onError(error: TypeError) {
-    console.log(error);
+    //console.log(error);
     alert("Oops..." + error.message);
   }
 }
