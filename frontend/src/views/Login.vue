@@ -15,7 +15,8 @@
 import firebase from "firebase";
 import Vue from "vue";
 import Component from "vue-class-component";
-import auth from "../services/Auth"; 
+import auth from "../services/Auth";
+import {User} from "@/dtos/User";
 
 @Component({})
 export default class LoginComponent extends Vue {
@@ -35,6 +36,16 @@ export default class LoginComponent extends Vue {
   }
 
   onLoginSucessfull(user: firebase.auth.UserCredential) {
+    const firebaseUser = auth.getLoggedUser();
+
+    if (firebaseUser != null) {
+      User.fromFirebase(firebaseUser).then(
+        user => this.$store.commit('setUser', user)
+      );
+    }
+
+
+
     //auth.getIdToken()
     //  .then(token => console.log(token));
 
