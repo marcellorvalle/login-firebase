@@ -35,8 +35,8 @@ export default class LoginComponent extends Vue {
   }
 
   onLoginSucessfull(user: firebase.auth.UserCredential) {
-    auth.getIdToken()
-      .then(token => console.log(token));
+    //auth.getIdToken()
+    //  .then(token => console.log(token));
 
     this.loggingIn = false;
     this.loginError = "";
