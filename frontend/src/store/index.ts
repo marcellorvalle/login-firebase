@@ -16,7 +16,8 @@ export default new Vuex.Store({
   actions: {
   },
   getters: {
-    user: state => state.user
+    user: state => state.user,
+    isAuthenticated: state => state.user.token != ''
   },
   modules: {
   }
