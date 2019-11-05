@@ -9,6 +9,9 @@
             <input type="password" placeholder="Password" v-model="password"/>
             <button type="submit">Login</button>
         </form>
+        <div>
+            <router-link to="/register">Criar conta</router-link>
+        </div>
     </div>
 </template>
 <script lang="ts">

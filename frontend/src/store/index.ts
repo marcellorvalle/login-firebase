@@ -17,6 +17,7 @@ export default new Vuex.Store({
   },
   getters: {
     user: state => state.user,
+    username: state => state.user.name,
     isAuthenticated: state => state.user.token != ''
   },
   modules: {
